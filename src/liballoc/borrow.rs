@@ -490,8 +490,6 @@ impl<'a> AddAssign<Cow<'a, str>> for Cow<'a, str> {
         }
     }
 }
-<<<<<<< HEAD
-=======
 
 #[stable(feature = "cow_str_add_assign_char", since = "1.41.0")]
 impl AddAssign<char> for Cow<'_, str> {
@@ -507,4 +505,3 @@ impl AddAssign<char> for Cow<'_, str> {
         self.to_mut().push(rhs);
     }
 }
->>>>>>> 5d2184b8e89... impl Add<char> and AddAssign<char> for Cow<'_, str>
